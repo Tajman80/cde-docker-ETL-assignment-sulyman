@@ -5,3 +5,5 @@
 
 # Build and run Docker containers using docker-compose
 docker-compose up --build
+
+docker build -t my_etl_project .

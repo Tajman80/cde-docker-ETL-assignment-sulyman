@@ -19,6 +19,14 @@ This project builds a complete ETL (Extract, Transform, Load) pipeline using Pyt
 • JSON responses retrieved      • Format values (strings)     • Insert with conflict check
                                 • Structure into row tuples;
 
+## 🧪 Setup and running of pipeline Instructions
 
+1. **To start the services:**
+    ```bash
+    ./run_docker.sh
+
+2. **To run the pipeline**
+    ```bash
+        docker run -d my_etl_project
 
 

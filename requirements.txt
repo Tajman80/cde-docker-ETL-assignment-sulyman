@@ -1,0 +1,4 @@
+requests
+json
+psycopg2
+os

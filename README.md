@@ -6,7 +6,9 @@
 ### Description:
 This project builds a complete ETL (Extract, Transform, Load) pipeline using Python and PostgreSQL to ingest structured data from the [REST Countries API](https://restcountries.com/). The pipeline parses, transforms, and stores each country’s metadata thereby enabling meaningful analysis using custom SQL queries. Below is the ETL architecture workflow:
 
-# ETL Architecture Workflow;
+## ETL Architecture Workflow
+
+```
 +----------------------+       +-----------------------+       +------------------------+
 |   REST Countries API |  -->  | Python ETL Script     |  -->  | PostgreSQL (pgAdmin)   |
 |   (JSON Responses)   |       | (Requests + psycopg2) |       |   Table: countries     |
@@ -18,6 +20,7 @@ This project builds a complete ETL (Extract, Transform, Load) pipeline using Pyt
 • Two-part data requests        • Extract nested fields       • Create table with UNIQUE
 • JSON responses retrieved      • Format values (strings)     • Insert with conflict check
                                 • Structure into row tuples;
+```
 
 ## 🧪 Setup and running of pipeline Instructions
 
